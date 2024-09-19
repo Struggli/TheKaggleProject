@@ -18,8 +18,6 @@ def searchCustomersFromCity(event=NONE):
     meters.set(len(df1[(df1['City'] == str(cityName.get())) & (df1['Gender'] == str(genderType.get()))]))
 
 
-city = "Yangon"
-gender = "Male"
 df1 = pd.read_csv('supermarket_sales - Sheet1.csv', delimiter=",")
 df1 = df1[['Invoice ID', 'City', 'Gender', 'Total']]
 df1.dropna()
